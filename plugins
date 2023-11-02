@@ -22,6 +22,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vifm/vifm.vim'
 Plug 'tpope/vim-surround'
+Plug 'jreybert/vimagit'
 " Initialize plugin system
 call plug#end()
 "
