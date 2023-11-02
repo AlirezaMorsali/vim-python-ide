@@ -12,7 +12,7 @@ cd /tmp/vim-build
 
 make -j $CPUS && make install
 
-pip install rope jedi ropevim flake8
+pip install rope jedi ropevim flake8 pylsp-rope
 
 UPDATE_PATH='export PATH=${HOME}/tools/vim/bin:$PATH'
 
