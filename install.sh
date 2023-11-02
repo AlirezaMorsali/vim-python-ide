@@ -4,7 +4,6 @@ VIM_VERSION="v8.2.0007"
 CURDIR=${PWD}
 CPUS=$(grep -c ^processor /proc/cpuinfo)
 
-read -p "Please backup your .vimrc file and .vim directory before starting. Press [Enter] to continue."
 
 git clone --branch $VIM_VERSION https://github.com/vim/vim.git /tmp/vim-build/
 cd /tmp/vim-build
@@ -13,7 +12,7 @@ cd /tmp/vim-build
 
 make -j $CPUS && make install
 
-pip2 install --user rope jedi ropevim flake8
+pip install rope jedi ropevim flake8
 
 UPDATE_PATH='export PATH=${HOME}/tools/vim/bin:$PATH'
 
